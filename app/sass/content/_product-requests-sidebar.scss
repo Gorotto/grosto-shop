@@ -1,0 +1,93 @@
+.product-requests__wrap {
+  width: 100%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  h1 {
+    width: 100%;
+    flex-flow: row wrap;
+  }
+}
+
+.product-requests-sidebar {
+  flex-basis: 266px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  height: 100%;
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    li {
+      width: 100%;
+      list-style-type: none;
+      a {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        font-family: $r;
+        line-height: 31px;
+        color: #000;
+        &:hover {
+          color: #1ea6d4;
+        }
+      }
+    }
+    li.active {
+      a {
+        color: #1ea6d4;
+      }
+    }
+  }
+}
+
+.page-icon {
+  @include sprite($page);
+}
+.client-icon{
+  @include sprite($client);
+}
+.orders-icon {
+  @include sprite($orders);
+}
+.goods-icon {
+  @include sprite($goods);
+}
+.msg-icon {
+  @include sprite($msg);
+}
+.sertificat-icon {
+  @include sprite($sertificat);
+}
+.balans-icon {
+  @include sprite($balans);
+}
+.purchases-icon {
+  @include sprite($purchases);
+}
+.sales-icon {
+  @include sprite($sales);
+}
+.analitics-icon {
+  @include sprite($analitics);
+}
+.delivery-icon {
+  @include sprite($delivery);
+}
+.exit-icon {
+  @include sprite($exit);
+}
+.sidebar-icon {
+  width: 26px;
+  margin-right: 10px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 4px;
+}

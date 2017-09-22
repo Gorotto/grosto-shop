@@ -1,0 +1,42 @@
+.offer-menu {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  margin: 0;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 20px 27px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d7e0e7;
+  li {
+    list-style-type: none;
+    text-align: left;
+    margin-right: 40px;
+    position: relative;
+    a {
+      font-size: 16px;
+      font-family: $r;
+      line-height: 20px;
+      color: #bbb;
+    }
+  }
+  li.active {
+    &:after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      height: 5px;
+      background-color: #00a8d7;
+      border-radius: 5px;
+      bottom: -23px;
+      z-index: 10;
+    }
+    a {
+      color: #00a8d7;
+    }
+  }
+}

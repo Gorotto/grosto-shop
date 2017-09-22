@@ -34,7 +34,19 @@ var postcss = require('gulp-postcss'),//Блиотека-парсер стиле
     fixes = require('postcss-fixes');
 
 let pages = [
-  'app/pug/pages/search-result/search-result.pug'
+  'app/pug/pages/purchasing-information/purchasing-information.pug',
+  'app/pug/pages/product-requests/product-requests.pug',
+  'app/pug/pages/profile-company/profile-company.pug',
+  'app/pug/pages/company/company-company.pug',
+  'app/pug/pages/company/company-person.pug',
+  'app/pug/pages/auction/auction.pug',
+  'app/pug/pages/product/product.pug',
+  'app/pug/pages/packaging/packaging-piece.pug',
+  'app/pug/pages/packaging/packaging-weight.pug',
+  'app/pug/pages/sales-volume/sales-volume.pug',
+  'app/pug/pages/place-transaction/place-transaction-delivery.pug',
+  'app/pug/pages/place-transaction/place-transaction-pickup.pug'
+
 ];
 gulp.task('css-libs', function () { // Создаем таск css-libs
     var processors = [
@@ -53,12 +65,13 @@ gulp.task('css-libs', function () { // Создаем таск css-libs
 
 // Get sprite from images
 gulp.task('sprite', (cb) => {
-    let spriteData = gulp.src(['app/img//**/*.png']).pipe(spritesmith({
-        imgName: '../../../img/sprite.png',
+    let spriteData = gulp.src(['app/img/**/*.png']).pipe(spritesmith({
+        imgName: '../img/sprite.png',
         cssName: '_sprite.scss',
         algorithm: 'top-down'
     }));
-    return spriteData.pipe(gulp.dest('app/sass/sprite'));
+      spriteData.css.pipe(gulp.dest('app/sass/sprite'));
+      spriteData.img.pipe(gulp.dest('img/'));
 });
 
 // SVG Sprites
@@ -185,7 +198,7 @@ gulp.task('extend-blocks', function () {
         .pipe(gulp.dest('./'))
 });
 
-gulp.task('watch', ['browser-sync', 'pug', 'compress',/* 'extend-pages',*/ 'css-libs', 'img', 'sass', 'sprite'], function () {
+gulp.task('watch', ['browser-sync', 'pug', 'compress',/* 'extend-pages',*/ 'css-libs', 'img', 'sass'/*, 'sprite'*/], function () {
     gulp.watch(['./app/pug/pages/*.pug', './app/pug/pages/**/*.pug'], ['pug']);
     gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img

@@ -1,0 +1,361 @@
+.product-requests__panel
+  h1 Заявки на продукты
+  .product-requests__form
+    form(method='POST' action='')
+      .product-requests__form-row
+        span Поиск закупки
+        .input-wrap
+          input(type='text', placeholder='Название или номер закупки' name='name')
+        button.btn-yellow Найти
+      .product-requests__form-row.product-requests__form-row-medium
+        span Выберите регион
+        .select_wrapper
+          input.select(name='search_select_input', type='text', placeholder='Статус')               
+          a.select_btn(href='#')
+            .select_btn_icon               
+          .top_fix
+            #select_dropdown.select_dropdown
+              a.select_name(href='#') &Kcy;&icy;&iecy;&vcy;
+              |                         
+              a.select_name(href='#') &Kcy;&icy;&rcy;&ocy;&vcy;&ocy;&gcy;&rcy;&acy;&dcy;
+              |                         
+              a.select_name(href='#') &Kcy;&icy;&rcy;&ocy;&vcy;
+              |                         
+              a.select_name(href='#') &Kcy;&icy;&shcy;&icy;&ncy;&iocy;&vcy;
+      .product-requests__form-row.product-requests__form-row-medium
+        span Выберите регион
+        .city_wrapper
+          input.city(name='search_city_input', type='text', placeholder='Все регионы')               
+          a.city_btn(href='#')
+            .city_btn_icon               
+          .top_fix
+            #city_dropdown.city_dropdown
+              a.city_name(href='#') &Kcy;&icy;&iecy;&vcy;
+              |                         
+              a.city_name(href='#') &Kcy;&icy;&rcy;&ocy;&vcy;&ocy;&gcy;&rcy;&acy;&dcy;
+              |                         
+              a.city_name(href='#') &Kcy;&icy;&rcy;&ocy;&vcy;
+              |                         
+              a.city_name(href='#') &Kcy;&icy;&shcy;&icy;&ncy;&iocy;&vcy;
+      .product-requests__form-row.product-requests__form-row-small
+        span Ожидаемая стоимость
+        .input-wrap
+          input(type='text', placeholder='От' name='name')
+        .input-wrap
+          input(type='text', placeholder='До' name='name')
+      .product-requests__form_more
+        .product-requests__form_more-dates
+          span.open-hide Даты
+          .product-requests__form_more-hide
+            .product-requests__form_more-row
+              p Дата активации предложения
+              span от
+              input.datepicker-inner(type='text')
+              span до
+              input.datepicker-inner(type='text')
+            .product-requests__form_more-row
+              p Дата действия предложения
+              span от
+              input.datepicker-inner(type='text')
+              span до
+              input.datepicker-inner(type='text')
+              button.btn-yellow Выбрать
+        .product-requests__form_more-client
+          span.open-hide Заказчик
+          .product-requests__form_more-hide
+            .product-requests__form_more-row
+              p Название компании или код ЕГРПОК 
+              input(type='text', placeholder='Введите данные')
+              button.btn-yellow Выбрать
+        a(href='#').reset-btn Сбросить фильтры
+  .product-requests__panel_wrap
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+              p
+                span Имя:
+                | Людмила Дмитренко
+              p
+                span E-mail:
+                | dmitri4@gmai.com
+              p
+                span Телефон:
+                | +380675552436
+              p
+                span ЕГРПОК:
+                | 02419562
+              a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Швейцарский сыр с плесенью
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+            p
+              span Имя:
+              | Людмила Дмитренко
+            p
+              span E-mail:
+              | dmitri4@gmai.com
+            p
+              span Телефон:
+              | +380675552436
+            p
+              span ЕГРПОК:
+              | 02419562
+            a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+              p
+                span Имя:
+                | Людмила Дмитренко
+              p
+                span E-mail:
+                | dmitri4@gmai.com
+              p
+                span Телефон:
+                | +380675552436
+              p
+                span ЕГРПОК:
+                | 02419562
+              a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+            p
+              span Имя:
+              | Людмила Дмитренко
+            p
+              span E-mail:
+              | dmitri4@gmai.com
+            p
+              span Телефон:
+              | +380675552436
+            p
+              span ЕГРПОК:
+              | 02419562
+            a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+              p
+                span Имя:
+                | Людмила Дмитренко
+              p
+                span E-mail:
+                | dmitri4@gmai.com
+              p
+                span Телефон:
+                | +380675552436
+              p
+                span ЕГРПОК:
+                | 02419562
+              a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+            p
+              span Имя:
+              | Людмила Дмитренко
+            p
+              span E-mail:
+              | dmitri4@gmai.com
+            p
+              span Телефон:
+              | +380675552436
+            p
+              span ЕГРПОК:
+              | 02419562
+            a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+              p
+                span Имя:
+                | Людмила Дмитренко
+              p
+                span E-mail:
+                | dmitri4@gmai.com
+              p
+                span Телефон:
+                | +380675552436
+              p
+                span ЕГРПОК:
+                | 02419562
+              a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+            p
+              span Имя:
+              | Людмила Дмитренко
+            p
+              span E-mail:
+              | dmitri4@gmai.com
+            p
+              span Телефон:
+              | +380675552436
+            p
+              span ЕГРПОК:
+              | 02419562
+            a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+              p
+                span Имя:
+                | Людмила Дмитренко
+              p
+                span E-mail:
+                | dmitri4@gmai.com
+              p
+                span Телефон:
+                | +380675552436
+              p
+                span ЕГРПОК:
+                | 02419562
+              a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00
+    .product-requests__panel_wrap-card 
+      .product-requests__panel_wrap-column
+        a(href='#').card-product Сок апельсиновый
+        span.card-company ОАО "Садовник"
+        .card-company__wrap
+          .card-about-company О компании
+          .about-company-hide
+            p
+              span Имя:
+              | Людмила Дмитренко
+            p
+              span E-mail:
+              | dmitri4@gmai.com
+            p
+              span Телефон:
+              | +380675552436
+            p
+              span ЕГРПОК:
+              | 02419562
+            a(href='#') Все заявки компании
+        span.card-activation-date Активация предложения: 04.08.2017 11:15
+      .product-requests__panel_wrap-column
+        span.card-price 190 996,00 тн. (без НДС)
+        span.card-period Период уточнения Осталось: 5 дн. 1 ч. 48 м.
+        a(href='#').card-favorite
+          span.favorite-icon
+            i.fa.fa-star(aria-hidden='true')
+          | В избранное
+        span.card-days-left Действие предложения: 22.08.2017 17:00

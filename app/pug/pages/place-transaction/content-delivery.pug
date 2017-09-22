@@ -1,0 +1,44 @@
+ul.offer-menu
+  li
+    a(href='#') Компания
+  li
+    a(href='#') Срок проведения аукциона
+  li
+    a(href='#') Продукт
+  li
+    a(href='#') Фотографии
+  li
+    a(href='#') Упаковка продукта
+  li
+    a(href='#') Объем продаж
+  li.active
+    a(href='#') Место сделки
+.offer-place-transaction
+  h2.offer-title Укажите место передачи товара
+  .checkbox__wrap
+    .checkbox
+      input#check1(type='radio', name='radio', value='check1')    
+      label(for='check1')
+        span 
+      | Самовывоз
+    .checkbox
+      input#check2(type='radio', name='radio', value='check2', checked)    
+      label(for='check2')
+        span
+      | Доставка
+    .checkbox
+      input#check3(type='radio', name='radio', value='check3')    
+      label(for='check3')
+        span
+      | Перегрузка
+  h2.offer-title Выберите регион, куда вы готовы доставить товар
+  p Если забрать товар можно из разных мест, то для каждого места создайте отдельное предложение
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Страна
+      input(type='text')
+    .offer-row__item
+      span.offer-row__item-title Регион
+      input(type='text', placeholder='Введите регион')
+  .country-tags__wrap
+    .country-item Казахстан

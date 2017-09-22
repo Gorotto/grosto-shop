@@ -1,0 +1,57 @@
+.profile-anketa
+  h1 Моя страница
+  .logo-wrap
+    .logo
+      a(href='')
+        span.delete       
+      img(src='img/content/logo-page.png', alt='')      
+    .upload-logo
+      input#file.upload(type='file', name='file')       
+      label(for='file')
+        span.upload-icon
+        | Загрузить логотип
+  .profile-anketa__wrap
+    .profile-anketa__wrap_row
+      .profile-anketa__wrap_row-title
+        span.text-title Название
+        i.chevron-icon.fa.fa-chevron-down(aria-hidden='true')
+      .profile-anketa__wrap_row-hide
+        .profile-anketa__wrap_row-hide-line 
+          input(type='text', placeholder='Название')
+          input(type='text', placeholder='Название на английском')
+          input(type='text', placeholder='Код ЕГРПОУ')
+    .profile-anketa__wrap_row
+      .profile-anketa__wrap_row-title
+        span.text-title Электронные данные
+        i.chevron-icon.fa.fa-chevron-down(aria-hidden='true')
+      .profile-anketa__wrap_row-hide
+        .profile-anketa__wrap_row-hide-line 
+          input(type='text', placeholder='Введите электронный адрес')
+          input(type='text', placeholder='Веб-сайт')
+          input(type='text', placeholder='Електронный адрес для получения документов ')
+          input(type='text', placeholder='Електронный адрес бухгалтера')
+    .profile-anketa__wrap_row
+      .profile-anketa__wrap_row-title
+        span.text-title Форма собственности
+        i.chevron-icon.fa.fa-chevron-down(aria-hidden='true')
+      .profile-anketa__wrap_row-hide
+        .profile-anketa__wrap_row-hide-line 
+          input(type='text', placeholder='Форма собственности')
+    .profile-anketa__wrap_row
+      .profile-anketa__wrap_row-title
+        span.text-title Адрес
+        i.chevron-icon.fa.fa-chevron-down(aria-hidden='true')
+      .profile-anketa__wrap_row-hide
+        .profile-anketa__wrap_row-hide-line 
+          input(type='text', placeholder='Юридический адрес')
+          input(type='text', placeholder='Страна')
+          input(type='text', placeholder='Область')
+          input(type='text', placeholder='Населенный пункт')
+          input(type='text', placeholder='Почтовый индекс')
+          input(type='text', placeholder='Адрес компании')
+    .upload-doc
+      input#file1.upload(type='file', name='file')       
+      label(for='file1')
+        span.upload-icon
+        h4 Загрузить документы для участия в закупках
+        p (Уставные документы, свидетельства, лицензии и др.)

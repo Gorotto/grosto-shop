@@ -1,0 +1,30 @@
+.offer-company
+  h2.offer-title Вы являетесь представителем компании или частным лицом?
+  .offer-company-company 
+    .offer-company-company-pic
+    span Компания
+    p Заявка на продажу продуктов питания для компании
+    a(href='#').btn-border.btn-checked Выбрано
+    .list-companies
+      .checkbox
+        input#check1(type='radio', name='radio', value='check1')    
+        label(for='check1')
+          span 
+        | AgroTech
+      .checkbox
+        input#check2(type='radio', name='radio', value='check2')    
+        label(for='check2')
+          span
+        | AgroProm
+  .offer-company-person
+    .offer-company-person-pic
+    span Частное лицо
+    p Заявка на продажу продуктов питания для себя
+    a(href='#').btn-border
+      span.checked-icon
+      | Выбрано
+  .buttons-wrap
+    a(href='#').prev-btn Добавить новую
+    a(href='#').next-btn
+      span.next-icon
+      | К сроку проведения аукциона

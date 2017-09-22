@@ -1,0 +1,224 @@
+.breadcrumbs{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 18px 0 10px;
+  box-sizing: border-box;
+}
+h1 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin: 0 0 30px;
+  color: $base-grey;
+  font-family: $r;
+  font-size: 22px;
+}
+.breadcrumbs__list {
+		list-style-type: none;
+		float: left;
+		padding: 0;
+    margin: 0;
+    top: 4px;
+    position: relative;
+		li {
+			display: inline-block;
+			position: relative;
+      font-size: 14px;
+      line-height: 15px;
+			color: #4d4d4d;
+		  font-family: $r;
+      margin-right: 15px;
+			a {
+			  color: #4d4d4d;
+        font-family: $r;
+			}
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:after {
+				content: "/";
+				position: absolute;
+				right: -10px;
+				bottom: 0;
+			}
+			&:last-of-type {
+				&:after, &:before {
+					content: none;
+				}
+			}
+
+		}
+	}
+
+  .page-link{
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+
+.btn-yellow {
+  min-width: 176px;
+  text-align: center;
+  height: 40px;
+  display: inline-block;
+  background-color: $yellow;
+  color: #323232;
+  font-family: $r;
+  font-size: 14px;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.stars-wrap {
+  float: left;
+  width: 100%;
+}
+.rating-count {
+  text-align: left;
+  margin-left: -3px;
+}
+.live-rating {
+  position: relative;
+  top: -4px;
+  margin-right: 5px;
+}
+
+.city_wrapper, .select_wrapper {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  min-width: 246px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    @include sprite($city);
+  }
+  .top_fix {
+    top: 35px;
+    position: absolute;
+    width: 100%;
+  }
+}
+.city_dropdown, .select_dropdown {
+  -webkit-box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  max-height: 320px;
+  z-index: 9997;
+  display: none;
+  &:hover {
+    display: block;
+  }
+  a, a:focus {
+    display: block;
+    color: #808080;
+    background-color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    -webkit-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+  }
+  a:hover {
+    background-color: #f3f3f3;
+    -webkit-transition: ease-out 0.1s;
+    transition: ease-out 0.1s;
+  }
+}
+
+.city_btn, .select_btn {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+}
+.city_wrapper a.city_btn .city_btn_icon {
+  @include sprite($btn_arrow);
+  z-index: 777;
+}
+
+.city_wrapper a.city_btn.clear {
+  top: 13px;
+}
+
+.city_wrapper a.city_btn.clear .city_btn_icon {
+  background: url(../img/navbar/city_btn_clear.png) no-repeat;
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+}
+.city_wrapper input.city {
+  outline: none;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  background-color: #fff;
+  padding: 9px 30px 8px 25px;
+  font-size: 14px;
+  color: #808080;
+  width: 100%;
+  border: none;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+  z-index: 777;
+}
+.city_wrapper input.city {
+
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+
+}
+.city_wrapper input.city:active,
+.city_wrapper input.city:focus {
+  color: #333333;
+}
+.city_wrapper input.city::-webkit-input-placeholder {
+  color: #808080;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  letter-spacing: 0.7px;
+}
+.city_wrapper input.city::-moz-placeholder {
+  color: #808080;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  letter-spacing: 0.7px;
+}
+.city_wrapper input.city:-ms-input-placeholder {
+  color: #808080;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  letter-spacing: 0.7px;
+}
+.city_wrapper input.city::placeholder {
+  color: #808080;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  letter-spacing: 0.7px;
+}
+.city_wrapper input.city:active::-webkit-input-placeholder,
+.city_wrapper input.city:focus::-webkit-input-placeholder {
+  color: #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.city_wrapper input.city:active::-moz-placeholder,
+.city_wrapper input.city:focus::-moz-placeholder {
+  color: #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.city_wrapper input.city:active:-ms-input-placeholder,
+.city_wrapper input.city:focus:-ms-input-placeholder {
+  color: #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.city_wrapper input.city:active::placeholder,
+.city_wrapper input.city:focus::placeholder {
+  color: #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}

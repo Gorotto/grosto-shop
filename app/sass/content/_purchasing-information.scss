@@ -1,0 +1,140 @@
+.purchasing-information__wrap {
+  width: 100%;
+  background-color: #fff;
+  float: left;
+  padding: 40px 27px;
+  box-sizing: border-box;
+
+}
+
+.purchasing-information__row, .profile-anketa__wrap_row {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  &-title {
+    height: 60px;
+    background-color: #f7f7f7;
+    width: 100%;
+    float: left;
+    padding: 19px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+.text-title {
+  float: left;
+  width: 90%;
+  text-align: left;
+  color: $base-grey;
+  font-family: $b;
+  font-size: 16px;
+}
+.profile-anketa__wrap_row .text-title{
+  font-family: $r;
+}
+
+.purchasing-information__row-hide, .profile-anketa__wrap_row-hide {
+  display: none;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  float: left;
+    &-line {
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+  }
+  &-title {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-basis: 300px;
+  }
+  &-text {
+    flex-basis: 390px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+  }
+}
+
+.profile-anketa__wrap_row-hide {
+  padding: 0;
+  &-line {
+    margin-top: 20px;
+    input {
+      width: 406px;
+      height: 40px;
+      border: 1px solid #e6e6e6;
+      margin-bottom: 30px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.chevron-icon {
+  float: right;
+  transition: all .3s ease;
+}
+.chevron-icon__rotate {
+  transform: rotate(180deg);
+  transition: all .3s ease;
+}
+
+.purchasing-information__table {
+  width: 100%;
+  background-color: #e5f3f7;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 27px;
+  .text-title {
+    margin-bottom: 12px;
+  }
+  &-acceptance-offer {
+    width: 26%;
+    float: left;
+    position: relative;
+  }
+  &-client {
+    width: 68%;
+    float: left;
+    position: relative;
+    .client {
+      color: #00a8d7;
+      font-family: $r;
+      font-size: 16px;
+      text-align: left;
+      line-height: 24px;
+      width: 100%;
+      height: 36px;
+    }
+    .stars-wrap {
+      margin-top: 10px;
+    }
+  }
+}
+
+.offer-price {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: $base-grey;
+  font-family: $r;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}

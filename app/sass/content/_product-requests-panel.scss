@@ -1,0 +1,340 @@
+.product-requests__panel {
+  flex-basis: 969px;
+  background-color: #fff;
+  padding: 30px 27px;
+  box-sizing: border-box;
+}
+
+.product-requests__form {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #e5f3f7;
+  padding: 20px 27px;
+  box-sizing: border-box;
+  &-row {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    span {
+      width: 100%;
+      float: left;
+      text-align: left;
+      font-size: 14px;
+      font-family: $r;
+      color: #000;
+      padding-bottom: 5px;
+      box-sizing: border-box;
+    }
+    .input-wrap {
+      width: 685px;
+    }
+    .btn-yellow {
+      min-width: 163px;
+      float: right;
+    }
+    input {
+      height: 40px;
+      background-color: #fff;
+      float: left;
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 35px;
+    }
+    &-medium {
+      width: 246px;
+      float: left;
+      margin-right: 15px;
+      input {
+        width: 100%;
+      }
+    }
+    &-small {
+      width: calc(100% - 522px);
+      float: left;
+      .input-wrap {
+        width: 163px;
+        float: left;
+        position: relative;
+        &:first-of-type {
+          margin-right: 13px;
+        }
+        &:last-of-type {
+          &:before {
+            content: "-";
+            position: absolute;
+            width: 5px;
+            height: 2px;
+            color: grey;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 39px;
+            left: -9px;
+          }
+        }
+        &:after {
+          content: "тн.";
+          position: absolute;
+          color: grey;
+          font-family: $r;
+          font-size: 14px;
+          line-height: 40px;
+          right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.product-requests__panel_wrap {
+  width: 100%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  &-column {
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 100%;
+  }
+  &-card {
+    width: 452px;
+    flex-basis: 452px;
+    min-height: 230px;
+    margin-top: 10px;
+    border: 1px solid #e6e6e6;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+}
+
+.card {
+  &-product {
+    color: #00a8d7;
+    font-family: $r;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-bottom: 13px;
+    &:hover {
+      color: #00a8d7;
+      text-decoration: underline;
+    }
+  }
+  &-company, &-about-company {
+    color: #000;
+    font-family: $r;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 22px;
+    position: relative;
+  }
+  &-about-company {
+    &:after {
+      content: "";
+      width: 100%;
+      left: 0;
+      bottom: 3px;
+      border-bottom: 1px dashed #8f8f8f;
+      position: absolute;
+    }
+    width: auto;
+    cursor: pointer;
+  }
+  &-activation-date, &-days-left, &-period {
+    color: #000;
+    font-family: $r;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 22px;
+  }
+  &-activation-date, &-days-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &-price {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-family: $b;
+    margin-bottom: 13px;
+  }
+  &-favorite {
+    float: left;
+    color: $base-grey;
+    font-size: 14px;
+    font-family: $r;
+    margin: 13px 0;
+    position: relative;
+    &:after {
+      content: "";
+      width: 77%;
+      left: 24px;
+      bottom: 3px;
+      border-bottom: 1px dashed #8f8f8f;
+      position: absolute;
+    }
+    i {
+      color: #59bddf;
+      margin-right: 10px;
+    }
+    &:hover {
+      color: #1ea6d4;
+      &:after {
+        border-bottom: 1px dashed #1ea6d4;
+      }
+    }
+  }
+}
+.card-company__wrap {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.about-company-hide {
+  position: absolute;
+  left: 0;
+  margin-top: 30px;
+  background-color: #fff;
+  width: 233px;
+  height: 302px;
+  border: 1px solid #e6e6e6;
+  z-index: 10;
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: none;
+  p {
+    margin: 20px 0 0;
+    text-align: left;
+    font-size: 14px;
+    font-family: $r;
+    span {
+      width: 100%;
+      float: left;
+      font-family: $b;
+    }
+  }
+  a {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-family: $r;
+    color: #00a8d7;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+  }
+}
+
+
+.product-requests__form_more {
+  width: 100%;
+  float: left;
+  position: relative;
+  &-row {
+    width: 100%;
+    float: left;
+    &:nth-of-type(2) {
+      margin-top: 25px;
+    }
+  }
+  &-dates, &-client {
+    width: 85px;
+    float: left;
+    position: relative;
+  }
+  &-hide {
+    background-color: #fff;
+    width: 455px;
+    min-height: 210px;
+    border: 1px solid #e6e6e6;
+    padding:  23px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    z-index: 5;
+    display: none;
+    p {
+      width: 100%;
+      float: left;
+      font-size: 14px;
+      font-family: $r;
+      color: #000;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    .btn-yellow {
+      min-width: 106px;
+      margin-left: 25px;
+      float: right;
+    }
+    span {
+      font-size: 15px;
+      font-family: $r;
+      line-height: 31px;
+      margin: 0 10px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+    .datepicker-inner {
+      width: 106px;
+      height: 40px;
+      border: 1px solid #707070;
+      text-align: center;
+      font-size: 14px;
+      color: #000;
+      font-family: $r;
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #000;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.reset-btn, .open-hide {
+  float: left;
+  font-size: 14px;
+  font-family: $r;
+  color: #000;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  &:after {
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px dashed #8f8f8f;
+    position: absolute;
+
+  }
+  &:hover {
+    color: #1ea6d4;
+    &:after {
+      border-bottom: 1px dashed #1ea6d4;
+    }
+  }
+}
+.reset-btn {
+  float: right;
+}

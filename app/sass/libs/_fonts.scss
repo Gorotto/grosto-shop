@@ -1,5 +1,30 @@
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+$r: 'OpenSansRegular';
+$sb: 'OpenSansSemibold';
+$b: 'OpenSansBold';
+
+@font-face {
+font-family: 'OpenSansRegular';
+src: url('../fonts/OpenSansRegular/OpenSansRegular.eot') format('embedded-opentype'),
+url('../fonts/OpenSansRegular/OpenSansRegular.woff2') format('woff2'),
+url('../fonts/OpenSansRegular/OpenSansRegular.woff') format('woff'),
+url('../fonts/OpenSansRegular/OpenSansRegular.ttf') format('truetype'),
+url('../fonts/OpenSansRegular/OpenSansRegular.svg') format('svg');
+}
+
+@font-face {
+font-family: 'OpenSansSemibold';
+src: url('../fonts/OpenSansSemibold/OpenSansSemibold.eot') format('embedded-opentype'),
+url('../fonts/OpenSansSemibold/OpenSansSemibold.woff2') format('woff2'),
+url('../fonts/OpenSansSemibold/OpenSansSemibold.woff') format('woff'),
+url('../fonts/OpenSansSemibold/OpenSansSemibold.ttf') format('truetype'),
+url('../fonts/OpenSansSemibold/OpenSansSemibold.svg') format('svg');
+}
+
+@font-face {
+font-family: 'OpenSansBold';
+src: url('../fonts/OpenSansBold/OpenSansBold.eot') format('embedded-opentype'),
+url('../fonts/OpenSansBold/OpenSansBold.woff2') format('woff2'),
+url('../fonts/OpenSansBold/OpenSansBold.woff') format('woff'),
+url('../fonts/OpenSansBold/OpenSansBold.ttf') format('truetype'),
+url('../fonts/OpenSansBold/OpenSansBold.svg') format('svg');
+}

@@ -1,0 +1,423 @@
+.offer-company,
+.offer-auction,
+.offer-product,
+.offer-packaging,
+.offer-sales-volume,
+.offer-place-transaction {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 27px;
+  box-sizing: border-box;
+  min-height: 440px;
+  position: relative;
+}
+
+.offer-title {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin: 10px 0 40px;
+  font-size: 22px;
+  font-family: $r;
+  span {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-family: $r;
+    color: #000;
+    margin-top: 7px;
+  }
+}
+
+.offer-company-company, .offer-company-person {
+  width: 350px;
+  float: left;
+  position: relative;
+  span {
+    width: calc(100% - 88px);
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    font-family: $b;
+    color: #000;
+  }
+  p {
+    margin: 0;
+    text-align: left;
+    width: calc(100% - 88px);
+    float: left;
+    font-size: 14px;
+    font-family: $r;
+    color: #000;
+  }
+}
+
+.offer-company-person {
+  margin-left: 80px;
+  span, p {
+    width: calc(100% - 55px);
+  }
+}
+
+.offer-company-company-pic {
+  float: left;
+  margin-right: 30px;
+  @include sprite($many-people);
+}
+
+.offer-company-person-pic {
+  float: left;
+  margin-right: 30px;
+  @include sprite($people);
+}
+
+
+.btn-border {
+  width: 178px;
+  height: 40px;
+  float: left;
+  border: 1px solid #7f7f7f;
+  color: #333;
+  font-family: $r;
+  text-align: center;
+  font-size: 16px;
+  line-height: 38px;
+  margin-top: 30px;
+  position: relative;
+  &:hover{
+    color: #333;
+  }
+}
+.btn-checked {
+  background-color: #00a8d7;
+  color: #fff;
+  border: none;
+  &:hover{
+    color: #fff;
+  }
+}
+
+.list-companies {
+  width: 100%;
+  float: left;
+  margin-top: 45px;
+}
+.buttons-wrap {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 130px;
+}
+
+.checked-icon {
+  @include sprite($checked);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 31px;
+  margin-top: 12px;
+}
+
+
+.checkbox{
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  display: inline-block;
+  margin: 0 0 15px;
+  font-size: 16px;
+  label{
+    float: left;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  small {
+    margin-left: 5px;
+    color: #bbb;
+    font-size: 16px;
+    font-family: $r;
+  }
+  input[type="radio"] {
+      display:none;
+  }
+  input[type="checkbox"] {
+      display:none;
+  }
+  input[type="radio"] + label span {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d7e0e7;
+    border-radius: 50%;
+    cursor:pointer;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    font-family: $r;
+    color: #000;
+    margin-right: 10px;
+    position: relative;
+    margin-left: -20px;
+    margin-top: 2px;
+  }
+  input[type="checkbox"] + label span {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d7e0e7;
+    border-radius: 50%;
+    cursor:pointer;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    font-family: $r;
+    color: #000;
+    margin-right: 10px;
+    position: relative;
+    margin-left: -20px;
+    margin-top: 2px;
+  }
+
+
+  input[type="radio"]:checked + label span {
+    background-repeat: no-repeat;
+    background-size: contain;
+    size: 16px;
+    display: inline-block;
+    position: relative;
+    margin-left: -20px;
+    &::before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: #00a8d7;
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      border-radius: 50%;
+    }
+    &::after{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 50%;
+      left: calc(50% - 3px);
+      margin-top: calc(50% - 3px);
+    }
+  }
+  input[type="checkbox"]:checked + label span {
+    background-repeat: no-repeat;
+    background-size: contain;
+    size: 16px;
+    display: inline-block;
+    position: relative;
+    margin-left: -20px;
+    &::before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: #00a8d7;
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      border-radius: 50%;
+    }
+    &::after{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 50%;
+      left: calc(50% - 3px);
+      margin-top: calc(50% - 3px);
+    }
+  }
+}
+
+
+
+.next-btn {
+  min-width: 199px;
+  height: 40px;
+  background-color: #00a8d7;
+  float: right;
+  font-size: 16px;
+  font-family: $r;
+  color: #fff;
+  padding: 0 25px;
+  line-height: 38px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  &:hover{
+    color: #fff;
+  }
+  .next-icon {
+    position: absolute;
+
+  }
+}
+
+.prev-btn {
+  min-width: 178px;
+  height: 40px;
+  float: left;
+  border: 1px solid #707070;
+  color: #333;
+  font-family: $r;
+  text-align: center;
+  font-size: 16px;
+  line-height: 38px;
+  position: relative;
+  padding: 0 25px;
+  box-sizing: border-box;
+  &:hover{
+    color: #333;
+  }
+}
+
+.offer-row {
+  width: 100%;
+  float: left;
+  &__wrap {
+    width: 100%;
+    float: left;
+  }
+  &:last-of-type {
+    margin-bottom: 150px;
+  }
+  .offer-title {
+    color: #000;
+    margin-bottom: 30px;
+    span {
+      width: 100%;
+      float: left;
+      display: inline-block;
+      font-size: 14px;
+      font-family: $r;
+      margin-top: 10px;
+    }
+  }
+  &__item {
+    width: 250px;
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    &-title {
+      font-size: 16px;
+      font-family: $r;
+      width: 100%;
+      text-align: left;
+      color: #000;
+      margin-bottom: 10px;
+      float: left;
+    }
+    input, select {
+      width: 100%;
+      float: left;
+      height: 40px;
+      border: 1px solid #707070;
+      border-radius: 3px;
+      padding: 0 10px;
+      &:focus {
+        border: 1px solid #00a8d7;
+      }
+    }
+    .small-input {
+      width: 142px;
+      float: left;
+    }
+    &-long {
+      width: 50%;
+    }
+  }
+}
+
+.amount-product {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: $r;
+  line-height: 30px;
+}
+
+.product-packed {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.one-unit {
+  width: 100%;
+  float: left;
+  margin: 30px 0 150px;
+  .checkbox {
+    float: left;
+    width: 40%;
+    margin-top: 9px;
+  }
+}
+
+.amount-unit {
+  width: 200px;
+  float: left;
+  input {
+    width: 142px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: $r;
+    line-height: 30px;
+    color: #000;
+    &:placeholder {
+      color: #000;
+      font-size: 14px;
+      font-family: $r;
+    }
+  }
+  span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: $r;
+    line-height: 30px;
+    color: #000;
+  }
+}
+
+.long-small {
+  margin: 10px 0 40px;
+  small {
+    width: 100%;
+    float: left;
+    padding-left: 23px;
+    box-sizing: border-box;
+  }
+}
+.offer-row__item-date {
+  float: left;
+  margin-top: 32px;
+  margin-right: 15px;
+  .offer-row__item-title {
+    float: left;
+    width: 40px;
+    line-height: 36px;
+  }
+}
+.datepicker-inner {
+  float: left;
+  width: 105px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  text-align: center;
+  border: 1px solid #707070;
+}

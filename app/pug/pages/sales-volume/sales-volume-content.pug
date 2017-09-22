@@ -1,0 +1,70 @@
+ul.offer-menu
+  li
+    a(href='#') Компания
+  li
+    a(href='#') Срок проведения аукциона
+  li
+    a(href='#') Продукт
+  li
+    a(href='#') Фотографии
+  li
+    a(href='#') Упаковка продукта
+  li.active
+    a(href='#') Объем продаж
+  li
+    a(href='#') Место сделки
+.offer-sales-volume
+  h2.offer-title Укажите объем продажи товара
+  .checkbox__wrap
+    .checkbox
+      input#check1(type='radio', name='radio', value='check1')    
+      label(for='check1')
+        span 
+      | Фиксированный объем
+      small (Разовая поставка)
+    .checkbox
+      input#check2(type='radio', name='radio', value='check2')    
+      label(for='check2')
+        span
+      | Много поставок
+      small (Готовность к периодическим поставкам)
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Минимальная поставка за раз
+      input.small-input(type='text')
+      span.amount-product кг
+    .offer-row__item
+      span.offer-row__item-title Максимальная поставка за раз
+      input.small-input(type='text')
+      span.amount-product кг
+  .checkbox.long-small
+    input#check3(type='checkbox', name='checkbox', value='check3')    
+    label(for='check3')
+      span
+    | Имеются ограничения по общему количеству
+    small (Товара более нет в наличии или нет 
+      <br> возможности его поставить в таком количестве)
+  .offer-row
+    .offer-row__item.offer-row__item-long
+      span.offer-row__item-title Ограничения по общему количеству
+      input.small-input(type='text')
+      span.amount-product кг
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Срок первой поставки
+      select
+        option Выберите вид
+        option 2
+        option 3
+        option 4
+    .offer-row__item-date
+      span.offer-row__item-title Дата
+      input.datepicker-inner(type='text')
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К фотографии
+    a(href='#').next-btn
+      span.next-icon
+      | К объему продаж
+        
