@@ -45,7 +45,14 @@ let pages = [
   'app/pug/pages/packaging/packaging-weight.pug',
   'app/pug/pages/sales-volume/sales-volume.pug',
   'app/pug/pages/place-transaction/place-transaction-delivery.pug',
-  'app/pug/pages/place-transaction/place-transaction-pickup.pug'
+  'app/pug/pages/place-transaction/place-transaction-pickup.pug',
+  'app/pug/pages/payment-terms/payment-terms-partial-prepayment.pug',
+  'app/pug/pages/payment-terms/payment-terms-delay.pug',
+  'app/pug/pages/payment-terms/payment-terms-full-prepayment.pug',
+  'app/pug/pages/food-costs/food-costs.pug',
+  'app/pug/pages/guarantee-transactions/guarantee-transactions.pug',
+  'app/pug/pages/quality-parameters/quality-parameters-with-parameter.pug',
+  'app/pug/pages/quality-parameters/quality-parameters-without-parameter.pug'
 
 ];
 gulp.task('css-libs', function () { // Создаем таск css-libs
@@ -74,42 +81,7 @@ gulp.task('sprite', (cb) => {
       spriteData.img.pipe(gulp.dest('img/'));
 });
 
-// SVG Sprites
-/*gulp.task('svg-sprite', function () {
 
-    var svgs = gulp
-        .src(path.src.svgSprite)
-        .pipe(rename({prefix: 'svg-icon-'}))
-        .pipe(svgmin())
-        .pipe(svgstore({ inlineSvg: true }));
-
-    function fileContents (filePath, file) {
-        return file.contents.toString();
-    }
-
-    return gulp
-        .src('src/template/svg.html')
-        .pipe(inject(svgs, { transform: fileContents }))
-        .pipe(gulp.dest('src/template'));
-
-});*/
-
-/*-- таск подключается по желанию разработчика ---*/
-/*gulp.task('js-libs', function () {
-    return gulp.src([ // Берем все необходимые библиотеки
-        'app/libs/js-libs/jquery.jscrollpane.min.js',
-        'app/libs/js-libs/jquery.mousewheel.js',
-        'app/libs/js-libs/bootstrap.min.js',
-        'app/libs/js-libs/validation.js',
-        'app/libs/js-libs/fotorama.js',
-        'app/libs/js-libs/lightbox.min.js',
-        'app/libs/js-libs/owl.carousel.min.js',
-        'app/libs/js-libs/slick.min.js'
-    ])
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('js')); // Выгружаем в папку app/js
-});*/
 
 gulp.task('sass', function () { // Создаем таск Sass
     var processors = [// подключаем постпроцессоры в массиве

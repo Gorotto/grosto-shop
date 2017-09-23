@@ -1,0 +1,38 @@
+ul.offer-menu
+  li
+    a(href='#') Стоимость продуктов 
+  li.active
+    a(href='#') Условия оплаты 
+  li
+    a(href='#') Гарантия сделки 
+
+.offer-partial-prepayment
+  h2.offer-title Укажите какая оплата Вам подходит
+  .checkbox__wrap
+    .checkbox
+      input#check1(type='radio', name='radio', value='check1')    
+      label(for='check1')
+        span 
+      | Полная предоплата
+    .checkbox
+      input#check2(type='radio', name='radio', value='check2')    
+      label(for='check2')
+        span
+      | Частичная предоплата
+    .checkbox
+      input#check3(type='radio', name='radio', value='check3', checked)    
+      label(for='check3')
+        span
+      | Отсрочка платежа
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Количество дней для конечной оплаты после поставки товара
+      input.extra-small-input(type='text', placeholder='')
+      span.amount-product дней
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К объему продаж
+    a(href='#').next-btn
+      span.next-icon
+      | К стоимости

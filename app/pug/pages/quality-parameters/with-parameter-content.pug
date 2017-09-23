@@ -1,0 +1,113 @@
+ul.offer-menu
+  li
+    a(href='#') Параметры предложения
+  li.active
+    a(href='#') Параметры качества
+  li
+    a(href='#') Срок годности
+  li
+    a(href='#') Возврат
+  li
+    a(href='#') Транспортная упаковка
+  li
+    a(href='#') Параметры поставки 
+
+.offer-quality-parameters
+  h2.offer-title Качество продукта
+    p Укажите параметры качества продукта
+  .offer-row
+    .offer-row__item
+      .checkbox.checkbox-centr
+        input#check1(type='checkbox', name='checkbox', value='check1')    
+        label(for='check1')
+          span 
+        | Продукт имеет штрихкод
+    .offer-row__item
+      span.offer-row__item-title  Тип штрихкода
+      select
+        option Выберите вид
+        option 2
+        option 3
+  .offer-row
+    .offer-row__item
+      .checkbox.checkbox-centr
+        input#check2(type='checkbox', name='checkbox', value='check2')    
+        label(for='check2')
+          span 
+        | Условия брака
+    .offer-row__item
+      span.offer-row__item-title  Брак не будет превышать
+      input.extra-small-input(type='text', placeholder='')
+      span.amount-product %
+    h2.offer-title Параметры качества
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Наличие вредной примеси
+      select
+        option Выберите параметр
+        option 2
+        option 3
+    .offer-row__item
+      span.offer-row__item-title Наличие вредной примеси
+      select
+        option Выберите параметр
+        option 2
+        option 3
+    .offer-row__item
+      span.offer-row__item-title Наличие вредной примеси
+      select
+        option Выберите параметр
+        option 2
+        option 3
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title-hight Наличие признаков зараженности вредителями
+      select
+        option Выберите параметр
+        option 2
+        option 3
+    .offer-row__item
+      span.offer-row__item-title-hight Однородность муки
+      select
+        option Выберите параметр
+        option 2
+        option 3
+    .offer-row__item
+      span.offer-row__item-title-hight Наличие заметных частиц оболочек зерна
+      select
+        option Выберите параметр
+        option 2
+        option 3
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title-hight Наличие нарушений герметичности упаковки
+      select
+        option Выберите параметр
+        option 2
+        option 3
+    .offer-row__item
+      span.offer-row__item-title-hight Наличие постороннего запаха
+      select
+        option Выберите параметр
+        option 2
+        option 3
+    .offer-row__item
+      span.offer-row__item-title-hight Наличие сорной примеси
+      select
+        option Выберите параметр
+        option 2
+        option 3
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Цвет муки
+      select
+        option Выберите параметр
+        option 2
+        option 3
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К заявке
+    a(href='#').next-btn
+      span.next-icon
+      | К сроку годности 

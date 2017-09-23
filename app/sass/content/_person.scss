@@ -3,7 +3,10 @@
 .offer-product,
 .offer-packaging,
 .offer-sales-volume,
-.offer-place-transaction {
+.offer-place-transaction,
+.offer-partial-prepayment,
+.offer-guarantee-transactions,
+.offer-quality-parameters {
   width: 100%;
   float: left;
   background-color: #fff;
@@ -27,6 +30,16 @@
     font-family: $r;
     color: #000;
     margin-top: 7px;
+  }
+  p {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-family: $r;
+    color: #000;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -118,6 +131,15 @@
   margin-top: 12px;
 }
 
+.checkbox__wrap {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 15px;
+  .long-small {
+    margin: 25px 0 0;
+  }
+}
 
 .checkbox{
   width: 100%;
@@ -287,6 +309,21 @@
 .offer-row {
   width: 100%;
   float: left;
+  p {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: $r;
+    color: #000;
+  }
+  .checkbox {
+    margin-bottom: 23px;
+  }
+  .checkbox-centr {
+    margin: 42px 0 0;
+  }
   &__wrap {
     width: 100%;
     float: left;
@@ -311,6 +348,7 @@
     float: left;
     margin-right: 80px;
     margin-bottom: 30px;
+    position: relative;
     &-title {
       font-size: 16px;
       font-family: $r;
@@ -319,6 +357,19 @@
       color: #000;
       margin-bottom: 10px;
       float: left;
+
+      &-hight {
+      height: 45px;
+      font-size: 16px;
+      font-family: $r;
+      width: 100%;
+      text-align: left;
+      color: #000;
+      margin-bottom: 10px;
+      display: inline-flex;
+      flex-flow: row wrap;
+      align-items: flex-end;
+      }
     }
     input, select {
       width: 100%;
@@ -335,8 +386,30 @@
       width: 142px;
       float: left;
     }
+    .extra-small-input {
+      float: left;
+      width: 91px;
+      height: 40px;
+      border: 1px solid #707070;
+      border-radius: 3px;
+      padding: 0 10px;
+      &:focus {
+        border: 1px solid #00a8d7;
+      }
+    }
     &-long {
       width: 50%;
+    }
+  }
+  .extra-small-input {
+    float: left;
+    width: 91px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    padding: 0 10px;
+    &:focus {
+      border: 1px solid #00a8d7;
     }
   }
 }
@@ -346,7 +419,7 @@
   margin-left: 10px;
   font-size: 14px;
   font-family: $r;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .product-packed {
@@ -398,10 +471,12 @@
   small {
     width: 100%;
     float: left;
-    padding-left: 23px;
-    box-sizing: border-box;
+    // padding-left: 23px;
+    // box-sizing: border-box;
   }
 }
+
+
 .offer-row__item-date {
   float: left;
   margin-top: 32px;
@@ -420,4 +495,63 @@
   margin-left: 10px;
   text-align: center;
   border: 1px solid #707070;
+}
+
+.country-tags__wrap {
+  width: 100%;
+  float: left;
+}
+
+.country-item {
+  position: relative;
+  float: left;
+  text-align: center;
+  min-width: 97px;
+  height: 38px;
+  background-color: #ace1f0;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: $r;
+  color: #000;
+  line-height: 36px;
+  margin: 0 21px 17px 0;
+  &:after {
+    content: '';
+    @include sprite($del-icon);
+    position: absolute;
+    right: -16px;
+    top: -8px;
+    cursor: pointer;
+  }
+}
+
+.footnote  {
+  position: absolute;
+  left: 2px;
+  margin-top: 57px;
+  color: #bbb;
+  float: left;
+  width: 100%;
+  font-family: $r;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.btn-confirm {
+  width: 259px;
+  height: 40px;
+  background-color: #00a8d7;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-family: $r;
+  color: #fff;
+  line-height: 36px;
+  left: 30%;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }

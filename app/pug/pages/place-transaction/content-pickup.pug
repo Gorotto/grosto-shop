@@ -1,0 +1,81 @@
+ul.offer-menu
+  li
+    a(href='#') Компания
+  li
+    a(href='#') Срок проведения аукциона
+  li
+    a(href='#') Продукт
+  li
+    a(href='#') Фотографии
+  li
+    a(href='#') Упаковка продукта
+  li
+    a(href='#') Объем продаж
+  li.active
+    a(href='#') Место сделки
+.offer-place-transaction
+  h2.offer-title Укажите место передачи товара
+  .checkbox__wrap
+    .checkbox
+      input#check1(type='radio', name='radio', value='check1', checked)    
+      label(for='check1')
+        span 
+      | Самовывоз
+    .checkbox
+      input#check2(type='radio', name='radio', value='check2')    
+      label(for='check2')
+        span
+      | Доставка
+    .checkbox
+      input#check3(type='radio', name='radio', value='check3')    
+      label(for='check3')
+        span
+      | Перегрузка
+  h2.offer-title Адрес самовывоза
+    p Если забрать товар можно из разных мест,
+      br 
+      | то для каждого места создайте отдельное предложение
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Страна
+      input(type='text', placeholder='Введите страну')
+    .offer-row__item
+      span.offer-row__item-title Регион
+      input(type='text', placeholder='Введите регион')
+    .offer-row__item
+      span.offer-row__item-title Адрес
+      input(type='text', placeholder='Введите адрес')
+      .footnote 
+        | Укажите полный адрес откуда забрать товар
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Место доставки
+      select
+        option Оптовая база
+        option Оптовая база
+        option Оптовая база
+  .offer-row
+    h2.offer-title Наличие товара в регионе
+    .checkbox
+      input#check4(type='checkbox', name='checkbox', value='check4')    
+      label(for='check4')
+        span
+      | Товар в наличии
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Товар будет в наличии
+      select
+        option К определенному дню
+        option 2
+        option 3
+        option 4
+    .offer-row__item-date
+      span.offer-row__item-title Дата
+      input.datepicker-inner(type='text')
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К объему продаж
+    a(href='#').next-btn
+      span.next-icon
+      | К стоимости

@@ -1,0 +1,60 @@
+ul.offer-menu
+  li
+    a(href='#') Стоимость продуктов 
+  li
+    a(href='#') Условия оплаты 
+  li.active
+    a(href='#') Гарантия сделки 
+
+.offer-guarantee-transactions
+  h2.offer-title Укажите требования к сделке
+    p Под нарушением сделки понимается нарушение любых условий работы,
+      br
+      | в том числе отказ от сделки после заключения.
+  .checkbox__wrap
+    .checkbox.long-small
+      input#check1(type='radio', name='radio', value='check1')    
+      label(for='check1')
+        span 
+        | Требуется рейтинг покупателя GROSTO
+        |
+        small (Предложение будет видно только покупателям с рейтингом 7 и выше)
+    .checkbox.long-small
+      input#check2(type='radio', name='radio', value='check2', checked)    
+      label(for='check2')
+        span
+        | Требуется финансовая гарантия покупателя
+        |
+        small (Покупатель выплачивает штраф в случае нарушения сделки)
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Размер гарантии
+      input.extra-small-input(type='text', placeholder='')
+      span.amount-product % от суммы сделки
+    p Это значит, что гарантия составит 
+      span 243750 
+      | тенге
+  .checkbox__wrap
+    .checkbox.long-small
+      input#check3(type='checkbox', name='.checkbox', value='check3', checked)    
+      label(for='check3')
+        span 
+        | Готовность предоставить финансовую гарантию
+        |
+        small (Готовность поставщика гарантировать покупку. Штраф в случае нарушения сделки.)
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Размер гарантии
+      input.extra-small-input(type='text', placeholder='')
+      span.amount-product % от суммы сделки
+    p Это значит, что гарантия составит 
+      span 243750 
+      | тенге
+  button.btn-confirm Подтвердить предложение
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К объему продаж
+    a(href='#').next-btn
+      span.next-icon
+      | К стоимости

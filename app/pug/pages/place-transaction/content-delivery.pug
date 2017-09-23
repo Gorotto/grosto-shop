@@ -32,13 +32,22 @@ ul.offer-menu
         span
       | Перегрузка
   h2.offer-title Выберите регион, куда вы готовы доставить товар
-  p Если забрать товар можно из разных мест, то для каждого места создайте отдельное предложение
+    p Если забрать товар можно из разных мест,
+      br 
+      | то для каждого места создайте отдельное предложение
   .offer-row
     .offer-row__item
       span.offer-row__item-title Страна
-      input(type='text')
+      input(type='text', placeholder='Введите страну')
     .offer-row__item
       span.offer-row__item-title Регион
       input(type='text', placeholder='Введите регион')
   .country-tags__wrap
     .country-item Казахстан
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К объему продаж
+    a(href='#').next-btn
+      span.next-icon
+      | К стоимости
