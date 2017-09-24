@@ -1,0 +1,83 @@
+ul.offer-menu
+  li
+    a(href='#') Параметры предложения
+  li
+    a(href='#') Параметры качества
+  li.active
+    a(href='#') Срок годности
+  li
+    a(href='#') Возврат
+  li
+    a(href='#') Транспортная упаковка
+  li
+    a(href='#') Параметры поставки 
+  li
+    a(href='#') Сертификаты
+  li
+    a(href='#') Образец  
+  li
+    a(href='#') Юридические требования 
+  li
+    a(href='#') Предоплата
+  li
+    a(href='#') Документы 
+  li
+    a(href='#') Комментарии
+
+
+.offer-shelf-life
+  h2.offer-title Укажите срок годности товара
+    p Укажите параметры качества продукта
+  .offer-row
+    .offer-row__item
+      .checkbox.checkbox-centr-notext
+        input#check1(type='checkbox', name='checkbox', value='check1')    
+        label(for='check1')
+          span 
+        | Полный срок годности
+    .offer-row__item
+      span.offer-row__item-title
+      input.extra-small-input(type='text', placeholder='')
+      select.extra-small-select
+        option Сутки
+        option 2
+        option 3
+  .offer-row
+    .offer-row__item
+      .checkbox.checkbox-centr-notext.long-small
+        input#check1(type='checkbox', name='checkbox', value='check1')    
+        label(for='check1')
+          span 
+          | Остаточный срок годности
+          |
+          small Указывается на момент поставки товара
+    .offer-row__item
+      input.extra-small-input(type='text', placeholder='')
+      select.extra-small-select
+        option Сутки
+        option 2
+        option 3
+  .offer-row
+    .offer-row__item
+      .checkbox.checkbox-centr-notext.long-small
+        input#check2(type='checkbox', name='checkbox', value='check2')    
+        label(for='check2')
+          span 
+          | Температура хранения
+          |
+          small Вы можете указать конкретную температуру хранения или диапазон
+    input.extra-small-input(type='text', placeholder='')
+    .checkbox.checkbox-extra-small
+      input#check3(type='checkbox', name='checkbox', value='check3', checked)    
+      label(for='check3')
+        span 
+      | до
+    input.extra-small-input(type='text', placeholder='')
+  
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К качеству
+    a(href='#').next-btn
+      span.next-icon
+      | К возврату

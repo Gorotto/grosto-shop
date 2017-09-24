@@ -52,7 +52,17 @@ let pages = [
   'app/pug/pages/food-costs/food-costs.pug',
   'app/pug/pages/guarantee-transactions/guarantee-transactions.pug',
   'app/pug/pages/quality-parameters/quality-parameters-with-parameter.pug',
-  'app/pug/pages/quality-parameters/quality-parameters-without-parameter.pug'
+  'app/pug/pages/quality-parameters/quality-parameters-without-parameter.pug',
+  'app/pug/pages/shelf-life/shelf-life.pug',
+  'app/pug/pages/comments/comments.pug',
+  'app/pug/pages/documentation/documentation.pug',
+  'app/pug/pages/prepayment/prepayment.pug',
+  'app/pug/pages/legal-requirements/legal-requirements.pug',
+  'app/pug/pages/product-sample/product-sample.pug',
+  'app/pug/pages/certificates/certificates.pug',
+  'app/pug/pages/delivery-parameters/delivery-parameters.pug',
+  'app/pug/pages/transport-packaging/transport-packaging.pug',
+  'app/pug/pages/return/return.pug'
 
 ];
 gulp.task('css-libs', function () { // Создаем таск css-libs

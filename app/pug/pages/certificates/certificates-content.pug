@@ -1,0 +1,67 @@
+ul.offer-menu
+  li
+    a(href='#') Параметры предложения
+  li
+    a(href='#') Параметры качества
+  li
+    a(href='#') Срок годности
+  li
+    a(href='#') Возврат
+  li
+    a(href='#') Транспортная упаковка
+  li
+    a(href='#') Параметры поставки 
+  li.active
+    a(href='#') Сертификаты
+  li
+    a(href='#') Образец  
+  li
+    a(href='#') Юридические требования 
+  li
+    a(href='#') Предоплата
+  li
+    a(href='#') Документы 
+  li
+    a(href='#') Комментарии
+
+
+.offer-shelf-life
+  h2.offer-title Требования к сертификатам
+  .offer-row
+    .checkbox
+      input#check1(type='checkbox', name='checkbox', value='check1', checked)    
+      label(for='check1')
+        span 
+      | Готовы предоставить сертификат на товар
+  .offer-row
+    .checkbox
+      input#check2(type='checkbox', name='checkbox', value='check2', checked)    
+      label(for='check2')
+        span 
+      | Готовы предоставить фото сертификата
+    .offer-row__item
+      .add-photo
+        .add-photo-pic
+        .add-photo-btn
+          input#file.upload(type='file', name='file')       
+          label(for='file')
+            | Выбрать
+  .offer-row
+    .checkbox__wrap
+      .checkbox
+        input#check3(type='radio', name='radio', value='check3', checked)    
+        label(for='check3')
+          span 
+        | Готовы предоставить реальный сертификат по почте заранее
+      .checkbox
+        input#check4(type='radio', name='radio', value='check4')    
+        label(for='check4')
+          span 
+        | Готовы предоставить реальный сертификат при поставке
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К параметрам поставки
+    a(href='#').next-btn
+      span.next-icon
+      | К образцу
