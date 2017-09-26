@@ -1,0 +1,141 @@
+footer {
+  position: relative;
+  display: inline-block;
+  float: left;
+  // margin-top: 50px;
+  min-height: 196px;
+  width: 100%;
+  background-color: #e6e6e6;
+  bottom: 0;
+  left: 0;
+}
+footer .footer_inner {
+  padding: 40px 0;
+  box-sizing: border-box;
+  padding-top: 35px;
+  overflow: hidden;
+}
+footer .footer_inner .footer_block {
+  float: left;
+}
+footer .footer_inner .footer_block.footer_1 {
+  width: 33%;
+}
+footer .footer_inner .footer_block.footer_2 {
+  width: 19%;
+}
+footer .footer_inner .footer_block.footer_3 {
+  width: 23%;
+}
+footer .footer_inner .footer_block.footer_4 {
+  width: 23%;
+}
+footer .footer_inner .footer_block .logo {
+  margin-bottom: 23px;
+  padding-top: 5px;
+}
+footer .footer_inner .footer_block p {
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+footer .footer_inner .footer_block p.heading {
+  padding-bottom: 1px;
+}
+footer .footer_inner .footer_block.footer_4 p.heading {
+  padding-bottom: 4px;
+}
+footer .footer_inner .footer_block a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+footer .footer_inner .footer_block a:hover {
+  color: #1ea6d4;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+footer .footer_inner .footer_block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+footer .footer_inner .footer_block ul li a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+footer .footer_inner .footer_block ul li a:hover {
+  color: #1ea6d4;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+footer .footer_inner .footer_block ul li a:before {
+  content: " › ";
+  display: inline-block;
+  font-family: $r;
+  position: relative;
+  top: -1px;
+  margin: 0 4px 0 0;
+}
+
+footer .footer_inner .footer_block .social .icon {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+}
+footer .footer_inner .footer_block.footer_3 ul {
+  padding-bottom: 25px;
+}
+footer .footer_inner .footer_block .social .icon.vk {
+  @include sprite($vk);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+footer .footer_inner .footer_block .social .icon.vk:hover {
+  @include sprite($vk_h);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+footer .footer_inner .footer_block .social .icon.fb {
+  @include sprite($fb);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+footer .footer_inner .footer_block .social .icon.fb:hover {
+  @include sprite($fb_h);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+footer .footer_inner .footer_block .social .icon.gp {
+  @include sprite($gp);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+footer .footer_inner .footer_block .social .icon.gp:hover {
+  @include sprite($gp_h);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+footer .footer_inner .footer_block .social .icon.tw {
+  @include sprite($tw);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+footer .footer_inner .footer_block .social .icon.tw:hover {
+  @include sprite($tw_h);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+footer .footer_inner .footer_mobile {
+  display: none;
+}

@@ -5,6 +5,7 @@
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: 180px;
   h1 {
     width: 100%;
     flex-flow: row wrap;
@@ -20,6 +21,12 @@
   display: -ms-inline-flex;
   display: inline-flex;
   height: 100%;
+  @include breakpoint(max-width 770px) {
+    display: none;
+  }
+  @include breakpoint(max-width 660px) {
+    display: none;
+  }
   ul {
     width: 100%;
     margin: 0;

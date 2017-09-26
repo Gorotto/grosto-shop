@@ -9,22 +9,23 @@ ul.offer-menu
 .offer-partial-prepayment
   h2.offer-title Укажите стоимость
   .offer-row
-    .offer-row__item
+    .offer-row__item.offer-row__item-long
       span.offer-row__item-title Стоимость за
       input.extra-small-input(type='text', placeholder='')
       span.amount-product кг
       input.extra-small-input(type='text', placeholder='')
       span.amount-product тенге
   .offer-row
-    .offer-row__item
-      .checkbox
+    .offer-row__item.offer-row__item-long
+      .checkbox.checkbox-centr-notext
         input#check1(type='checkbox', name='checkbox', value='check1')    
         label(for='check1')
           span 
         | Готов к понижению цены
-    .offer-row__item
       input.extra-small-input(type='text', placeholder='')
-      span.amount-product дней
+      span.amount-product %
+    .offer-row__item
+      
   .offer-row
     p Стоимость 1 кг от 10000 тенге до 11500 тенге
     p Общая стоимость за партию будет 11500 тенге

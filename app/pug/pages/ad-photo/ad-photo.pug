@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport"  content="initial-scale=1, maximum-scale=1, user-scalable=no")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/star-rating-svg.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/styles.min.css")
+
+  body
+    include ../header
+    section.company
+      .container-wrap
+        .breadcrumbs
+          ul.breadcrumbs__list
+             li
+               a(href='#') Главная
+             li
+               a(href='#') Мои продажи  
+             li Сделать предложение
+        include ../steps
+        form(method='POST' action='').offer__wrap
+          ul.offer-menu
+            li
+              a(href='#') Компания
+            li
+              a(href='#') Срок проведения аукциона
+            li
+              a(href='#') Продукт
+            li.active
+              a(href='#') Фотографии
+            li
+              a(href='#') Упаковка продукта
+            li
+              a(href='#') Объем продаж
+            li
+              a(href='#') Место сделки
+          .offer-packaging
+            h2.offer-title Добавьте фотографии товара
+              p Вы можете загрузить несколько фотографий
+            .offer-row
+              .pic-wrap
+                span.del-icon
+                img(src='img/pic.png')
+              .add-photo
+                .add-photo-pic
+                .add-photo-btn
+                  input#file.upload(type='file', name='file')       
+                  label(for='file')
+                    | Выбрать
+              .footnote Рекомендуемый размер изображения: 1920x1080
+              .footnote Максимальный размер файла: 4 МБ
+            .buttons-wrap
+              a(href='#').prev-btn
+                span.prev-icon
+                | К продукту
+              a(href='#').next-btn
+                span.next-icon
+                | К упаковке
+    include ../footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src='js/jquery-ui.min.js') 
+    script(src="js/bootstrap.min.js") 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/jquery.star-rating-svg.min.js") 
+    script(src="js/jquery.datetimepicker.full.min.js") 
+    script(src="js/script.min.js")

@@ -1,3 +1,46 @@
-header
-  .container
-    h2 Header
+header.header
+  .container-wrap
+    .header-panel
+      a(href='#').header-logo
+        img(src='img/logo.png')
+      .profile_links.profile_links-mob
+        a(href="#")
+          .user_icon
+          | ЧП Пупкин и КО
+        a(href="#")
+          .keys_icon
+          | Выход
+      form.header-search(method='POST' action='')
+        input.header-search-panel(type='text', placeholder='Поиск продуктов, поставщиков, номер закупки')
+        .city_wrapper
+          input.city(name='search_city_input', type='text', placeholder='Все регионы')               
+          a.city_btn(href='#')
+            .city_btn_icon               
+          .top_fix
+            #city_dropdown.city_dropdown
+              a.city_name(href='#') &Kcy;&icy;&iecy;&vcy;
+              |                         
+              a.city_name(href='#') &Kcy;&icy;&rcy;&ocy;&vcy;&ocy;&gcy;&rcy;&acy;&dcy;
+              |                         
+              a.city_name(href='#') &Kcy;&icy;&rcy;&ocy;&vcy;
+              |                         
+              a.city_name(href='#') &Kcy;&icy;&shcy;&icy;&ncy;&iocy;&vcy;
+        button.search-btn
+      .profile_links
+        a(href="#")
+          .user_icon
+          | ЧП Пупкин и КО
+        a(href="#")
+          .keys_icon
+          | Выход
+    ul.header-menu
+      li
+        a(href='#') Главная
+      li
+        a(href='#') Продукты
+      li
+        a(href='#') Магазины 
+      li
+        a(href='#') Производители 
+      li
+        a(href='#') Карта

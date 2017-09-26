@@ -19,6 +19,18 @@ $(document).ready(function(){
          return false;
     });
   /*spoiler*/
+  $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 1,
+      nav : true,
+      // autoplay: true,
+      navText: true,
+      navigation:true,
+      pagination : true,
+      items: 1,
+      dots: true,
+      singleItem:false
+  });
 
   $(".rating-count").starRating({
     initialRating: 4.5,
@@ -133,7 +145,10 @@ $(document).ready(function(){
   $("body").click(function(e) {
     if($(e.target).closest(".product-requests__form_more-hide").length==0) $(".product-requests__form_more-hide").hide(100);
   });
-
+  $(".region-title").click(function(){
+    $(this).next('.regions__wrap').slideToggle(500);
+      return false;
+  });
 
 /*datetimepicker*/
   jQuery('.datepicker-inner').datetimepicker({

@@ -15,3 +15,28 @@ ul.offer-menu
     a(href='#') Место сделки
 .offer-auction
   h2.offer-title Cрок проведения аукциона
+  .offer-row
+    .offer-row__item
+      span.offer-row__item-title Дата завершения торгов
+      input.datepicker-inner.small-input(type='text')
+  .offer-row
+    span.offer-row__item-title Время завершения торгов
+    select.extra-small-select
+      option 00
+      option 01
+      option 02
+      option 03
+    span.amount-product часов
+    select.extra-small-select
+      option 00
+      option 01
+      option 02
+      option 03
+    span.amount-product минут
+  .buttons-wrap
+    a(href='#').prev-btn
+      span.prev-icon
+      | К компании
+    a(href='#').next-btn
+      span.next-icon
+      | К продукту

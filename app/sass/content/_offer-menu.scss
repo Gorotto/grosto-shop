@@ -11,11 +11,26 @@
   padding: 20px 27px;
   box-sizing: border-box;
   border-bottom: 1px solid #d7e0e7;
+  @include breakpoint(max-width 1030px) {
+    padding: 15px;
+  }
+  @include breakpoint(max-width 770px) {
+    display: none;
+  }
+  @include breakpoint(max-width 660px) {
+    display: none;
+  }
   li {
     list-style-type: none;
     text-align: left;
     margin-right: 40px;
     position: relative;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @include breakpoint(max-width 1030px) {
+      margin-right: 15px;
+    }
     a {
       font-size: 16px;
       font-family: $r;
@@ -34,9 +49,76 @@
       border-radius: 5px;
       bottom: -23px;
       z-index: 10;
+      @include breakpoint(max-width 1030px) {
+        bottom: -18px;
+      }
     }
     a {
       color: #00a8d7;
     }
+  }
+}
+
+.owl-carousel {
+  padding: 0 27px;
+  border-bottom: none;
+  &:after {
+    content: "";
+    background-color: #d7e0e7;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 2px;
+    z-index: -1;
+    left: 0;
+  }
+  li {
+    width: 100%;
+    float: left;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    width: auto;
+    float: left;
+    text-align: left;
+    height: 65px;
+    a {
+      line-height: 65px;
+    }
+  }
+  ul li.active:after {
+    bottom: 0;
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  right: 27px;
+  top: 22px;
+  background-color: #fff;
+  .owl-prev {
+    background-image: url("../img/btn_arrow.png");
+    background-size: 100%;
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    float: left;
+    margin-right: 10px;
+  }
+  .owl-next {
+    background-image: url("../img/btn_arrow.png");
+    background-size: 100%;
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    float: left;
+    margin-left: 10px;
   }
 }

@@ -8,6 +8,7 @@ html(lang="ru")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
     link(rel="stylesheet", href="css/star-rating-svg.css")
     link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/owl.carousel.min.css")
     link(rel="stylesheet", href="css/libs.min.css")
     link(rel="stylesheet", href="css/styles.min.css")
 
@@ -22,7 +23,9 @@ html(lang="ru")
              li
                a(href='#') Мои продажи  
              li Сделать предложение
+        include ../steps
         form(method='POST' action='').offer__wrap
+          include ../offer-menu-owl 
           include ./certificates-content
         
     include ../footer
@@ -31,5 +34,6 @@ html(lang="ru")
     script(src="js/bootstrap.min.js") 
     script(src="js/jquery.mousewheel.js") 
     script(src="js/jquery.star-rating-svg.min.js") 
+    script(src="js/owl.carousel.min.js") 
     script(src="js/jquery.datetimepicker.full.min.js") 
     script(src="js/script.min.js")

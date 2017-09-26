@@ -1,0 +1,60 @@
+.subscription-content
+  h1 Подписка
+  .offer-row
+    .offer-row__item.offer-row__item-long
+      span.offer-row__item-title Поиск категорий
+      input(type='text', placeholder='Огурцы, томаты')
+  .offer-row
+    .offer-row__item.offer-row__item-long
+      span.offer-row__item-title Регионы
+      .select_region
+        .region-title
+          span Выберите регион               
+        .regions__wrap
+          .regions__wrap-list
+            .checkboxs
+              input#check1(type='checkbox', name='checkbox', value='check1')    
+              label(for='check1')
+                span 
+              | АР Крым
+            .checkboxs
+              input#check2(type='checkbox', name='checkbox', value='check2')    
+              label(for='check2')
+                span 
+              | АР Крым
+            .checkboxs
+              input#check3(type='checkbox', name='checkbox', value='check3')    
+              label(for='check3')
+                span 
+              | АР Крым
+            .checkboxs
+              input#check4(type='checkbox', name='checkbox', value='check4')    
+              label(for='check4')
+                span 
+              | АР Крым
+            .checkboxs
+              input#check4(type='checkbox', name='checkbox', value='check4')    
+              label(for='check4')
+                span 
+              | АР Крым
+            .checkboxs
+              input#check4(type='checkbox', name='checkbox', value='check4')    
+              label(for='check4')
+                span 
+              | АР Крым
+          .buttons__wrap
+            button Выбрать
+            
+  .offer-row
+    .offer-row__item.offer-row__item-long
+      span.offer-row__item-title Подписка на компании
+      input(type='text', placeholder='Укажите название компании для получения предложений')               
+  .offer-row
+    .offer-row__item.offer-row__item-long
+      span.offer-row__item-title Рассылка
+      .checkboxs
+        input#check100(type='checkbox', name='checkbox', value='check100', checked)    
+        label(for='check100')
+          span 
+        | Ежедневная рассылка всех предложений вам на Email
+  button.subscr-btn Подписаться

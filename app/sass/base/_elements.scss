@@ -90,7 +90,10 @@ h1 {
   display: inline-block;
   position: relative;
   background-color: #fff;
-  min-width: 246px;
+  width: 246px;
+  @include breakpoint(max-width 660px) {
+    width: 100%;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -102,7 +105,11 @@ h1 {
     top: 35px;
     position: absolute;
     width: 100%;
+    z-index: 15;
   }
+}
+.select_wrapper:before {
+  display: none;
 }
 .city_dropdown, .select_dropdown {
   -webkit-box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.07);
@@ -135,7 +142,11 @@ h1 {
   top: 16px;
   right: 17px;
 }
-.city_wrapper a.city_btn .city_btn_icon {
+.city_wrapper a.city_btn .city_btn_icon  {
+  @include sprite($btn_arrow);
+  z-index: 777;
+}
+.select_wrapper a.select_btn .select_btn_icon {
   @include sprite($btn_arrow);
   z-index: 777;
 }
@@ -143,12 +154,15 @@ h1 {
 .city_wrapper a.city_btn.clear {
   top: 13px;
 }
+.select_wrapper a.select_btn .clear {
+  top: 13px;
+}
 
 .city_wrapper a.city_btn.clear .city_btn_icon {
-  background: url(../img/navbar/city_btn_clear.png) no-repeat;
-  background-size: 12px;
-  width: 12px;
-  height: 12px;
+  @include sprite($del-icon);
+}
+.select_wrapper a.select_btn.clear .select_btn_icon {
+  @include sprite($del-icon);
 }
 .city_wrapper input.city {
   outline: none;

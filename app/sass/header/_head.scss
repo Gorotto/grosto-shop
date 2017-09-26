@@ -1,0 +1,159 @@
+.header {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.1);
+  padding: 30px 0 10px;
+  box-sizing: border-box;
+}
+
+.header-panel {
+  width: 100%;
+  float: left;
+}
+
+.header-logo {
+  margin-right: 50px;
+  float: left;
+}
+
+.header-search {
+  float: left;
+  &-panel {
+    float: left;
+    height: 39px;
+    width: 600px;
+    border: 1px solid #d7e0e7;
+    border-right: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: grey;
+    font-family: $r;
+    font-size: 14px;
+    font-style: italic;
+  }
+  .city_wrapper {
+    border: 1px solid #d7e0e7;
+    width: 187px;
+    float: left;
+    @include breakpoint(max-width 660px) {
+      width: calc(100% - 38px);
+    }
+  }
+  @include breakpoint(max-width 1030px) {
+    width: 100%;
+    margin-top: 10px;
+    &-panel {
+      width: calc(100% - 225px);
+    }
+  }
+  @include breakpoint(max-width 770px) {
+    width: 100%;
+    margin-top: 10px;
+    &-panel {
+      width: calc(100% - 225px);
+    }
+  }
+  @include breakpoint(max-width 660px) {
+    width: 100%;
+    &-panel {
+      width: 100%;
+      border-right: 1px solid #d7e0e7;
+    }
+  }
+}
+
+.search-btn {
+  height: 39px;
+  width: 38px;
+  float: left;
+  background-color: #ffc11c;
+  border: none;
+  outline: none;
+  position: relative;
+  &:after {
+    content: '';
+    @include sprite($loop);
+    position: absolute;
+    left: 9px;
+    margin-top: -9px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.profile_links {
+  margin-left: 21px;
+  width: 133px;
+  display: inline-block;
+  margin-left: 22px;
+  float: right;
+  @include breakpoint(max-width 1030px) {
+    display: none;
+  }
+  @include breakpoint(max-width 770px) {
+    display: none;
+  }
+  &-mob {
+    display: none;
+    @include breakpoint(max-width 1030px) {
+      display: block;
+    }
+    @include breakpoint(max-width 770px) {
+      display: block;
+    }
+  }
+}
+.profile_links a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  float: left;
+  min-width: 100%;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+.profile_links a:hover {
+  color: #1ea6d4;
+  -webkit-transition: ease-out 0.1s;
+  transition: ease-out 0.1s;
+}
+.user_icon {
+  @include sprite($user);
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.keys_icon {
+  @include sprite($logout);
+  margin-bottom: -3px;
+  float: left;
+  margin-right: 10px
+}
+
+
+.header-menu {
+  width: 100%;
+  float: left;
+  margin: 15px 0 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+    margin-right: 35px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    a {
+      font-size: 14px;
+      font-family: $r;
+      color: #000;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+    }
+  }
+}

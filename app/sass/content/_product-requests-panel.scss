@@ -3,6 +3,17 @@
   background-color: #fff;
   padding: 30px 27px;
   box-sizing: border-box;
+  @include breakpoint(max-width 770px) {
+    flex-basis: 100%;
+    width: 100%;
+    float: left;
+  }
+  @include breakpoint(max-width 660px) {
+    flex-basis: 100%;
+    width: 100%;
+    float: left;
+    padding: 15px;
+  }
 }
 
 .product-requests__form {
@@ -12,6 +23,9 @@
   background-color: #e5f3f7;
   padding: 20px 27px;
   box-sizing: border-box;
+  @include breakpoint(max-width 660px) {
+    padding: 15px;
+  }
   &-row {
     width: 100%;
     float: left;
@@ -28,10 +42,20 @@
     }
     .input-wrap {
       width: 685px;
+      @include breakpoint(max-width 770px) {
+        width: calc(100% - 175px);
+      }
+      @include breakpoint(max-width 660px) {
+        width: 100%;
+      }
     }
     .btn-yellow {
       min-width: 163px;
       float: right;
+      @include breakpoint(max-width 670px) {
+        min-width: 100%;
+        margin-top: 15px;
+      }
     }
     input {
       height: 40px;
@@ -42,11 +66,16 @@
       width: 100%;
       padding-left: 10px;
       padding-right: 35px;
+      font-size: 14px;
+
     }
     &-medium {
       width: 246px;
       float: left;
       margin-right: 15px;
+      @include breakpoint(max-width 660px) {
+        width: 100%;
+      }
       input {
         width: 100%;
       }
@@ -54,10 +83,16 @@
     &-small {
       width: calc(100% - 522px);
       float: left;
+      @include breakpoint(max-width 770px) {
+        width: 100%;
+      }
       .input-wrap {
         width: 163px;
         float: left;
         position: relative;
+        @include breakpoint(max-width 660px) {
+          width: 47.8%;
+        }
         &:first-of-type {
           margin-right: 13px;
         }
@@ -101,6 +136,13 @@
     float: left;
     position: relative;
     height: 100%;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+      height: auto;
+      &:first-of-type {
+        margin-bottom: 10px;
+      }
+    }
   }
   &-card {
     width: 452px;
@@ -110,6 +152,12 @@
     border: 1px solid #e6e6e6;
     padding: 25px;
     box-sizing: border-box;
+    @include breakpoint(max-width 770px) {
+      flex-basis: 100%;
+    }
+    @include breakpoint(max-width 660px) {
+      flex-basis: 100%;
+    }
   }
 }
 
@@ -158,10 +206,19 @@
     text-align: left;
     line-height: 22px;
   }
+  &-period {
+    @include breakpoint(max-width 660px) {
+      width: 72%; 
+    }
+  }
   &-activation-date, &-days-left {
     position: absolute;
     left: 0;
     bottom: 0;
+    @include breakpoint(max-width 660px) {
+      position: relative;
+      width: 80%;
+    }
   }
   &-price {
     width: 100%;
@@ -245,12 +302,15 @@
   &-row {
     width: 100%;
     float: left;
+    span {
+      float: left;
+    }
     &:nth-of-type(2) {
       margin-top: 25px;
     }
   }
   &-dates, &-client {
-    width: 85px;
+    width: 70px;
     float: left;
     position: relative;
   }

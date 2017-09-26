@@ -4,7 +4,7 @@
   float: left;
   padding: 40px 27px;
   box-sizing: border-box;
-
+  margin-bottom: 180px;
 }
 
 .purchasing-information__row, .profile-anketa__wrap_row {
@@ -58,6 +58,12 @@
     display: inline-flex;
     flex-flow: row wrap;
     flex-basis: 300px;
+    @include breakpoint(max-width 770px) {
+      flex-basis: 207px;
+    }
+    @include breakpoint(max-width 660px) {
+      margin-bottom: 5px;
+    }
   }
   &-text {
     flex-basis: 390px;
@@ -108,11 +114,21 @@
     width: 26%;
     float: left;
     position: relative;
+    @include breakpoint(max-width 770px) {
+      width: 31%;
+    }
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+    }
   }
   &-client {
     width: 68%;
     float: left;
     position: relative;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+      margin-top: 15px;
+    }
     .client {
       color: #00a8d7;
       font-family: $r;
